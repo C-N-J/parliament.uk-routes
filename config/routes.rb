@@ -451,8 +451,6 @@ Rails.application.routes.draw do
 
   end
 
-
-
   ## Committees ##
   scope '/committees', as: 'committees' do
     # /committees
@@ -508,4 +506,7 @@ Rails.application.routes.draw do
       end
     end
   end
+
+  get '/research', as: 'research', to: 'research#index'
+  get '/research/:research_id', to: 'research#show'
 end
