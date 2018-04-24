@@ -507,6 +507,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get '/research', as: 'research', to: 'research#index'
-  get '/research/:research_id', to: 'research#show'
+  get '/briefings', as: 'briefings', to: 'briefings#index'
+  get '/briefings/:briefing_id', as: 'briefing', to: 'briefings#show'
 end
